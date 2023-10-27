@@ -1,0 +1,37 @@
+/* Estilos generales para ambos archivos HTML */
+body {
+  background-color: grey; /* Color de fondo sólido */
+  font-family: Arial, sans-serif; /* Fuente personalizada */
+}
+
+h1 {
+  color: orange
+}
+
+/* Estilos para las entradas de texto corto y de email */
+.input-wide {
+  width: 300px; /* Ampliación de 300px para entradas de texto corto y email */
+}
+
+/* Estilo para la entrada numérica */
+#edat {
+  width: 100px; /* Ampliación de 100px para la entrada numérica */
+}
+
+/* Estilos para los botones */
+.btn-subscribe, .btn-torna {
+  display: inline-block;
+  padding: 10px 20px;
+  text-align: center;
+  border: 1px solid orange;
+  background-color: orange; /* Fondo de color sólido personalizado */
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  text-decoration: none;
+}
+
+.btn-subscribe:hover, .btn-torna:hover {
+  background-color: blue; /* Cambio de color al pasar el ratón */
+}
+

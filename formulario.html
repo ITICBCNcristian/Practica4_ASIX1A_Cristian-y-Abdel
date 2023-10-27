@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Subscriu-te al noticiari ITIC Barcelona</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <h1>Suscriu-te al noticiari ITIC Barcelona</h1>
+
+  <form>
+
+    <p><strong>Primer, explica'ns qui ets:</strong></p>
+
+    <!-- Aquí comienza la sección para recopilar la información del usuario -->
+
+    <div class="input-group">
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+    </div>
+
+    <div class="input-group">
+      <label for="nom_cognoms">Nom i Cognoms:</label>
+      <input type="text" id="nom_cognoms" name="nom_cognoms" required>
+    </div>
+
+    <div class="input-group">
+      <label for="edat">Edat:</label>
+      <input type="number" id="edat" name="edat" required>
+    </div>
+
+    <!-- Aquí se recopila información sobre el ciclo de estudios -->
+
+    <div class="input-group">
+      <p><strong>Quin cicle estas estudiant?</strong></p>
+      <div>
+        <input type="radio" id="asix" name="cicle" value="asix" required>
+        <label for="asix">ASIX</label>
+      </div>
+      <div>
+        <input type="radio" id="dam" name="cicle" value="dam" required>
+        <label for="dam">DAM</label>
+      </div>
+      <div>
+        <input type="radio" id="daw" name="cicle" value="daw" required>
+        <label for="daw">DAW</label>
+      </div>
+    </div>
+
+    <div class="input-group">
+      <label for="curs">Curs:</label>
+      <select id="curs" name="curs" required>
+        <option value="primer">Primer</option>
+        <option value="segon">Segon</option>
+      </select>
+    </div>
+
+    <!-- Aquí se permite a los usuarios seleccionar temas de interés -->
+
+    <div class="input-group">
+      <p><strong>Marca els termes que vulgis estar sempre al dia!</strong></p>
+      <div>
+        <input type="checkbox" id="ia" name="temes" value="ia">
+        <label for="ia">Intel·ligència artificial</label>
+      </div>
+      <div>
+        <input type="checkbox" id="cq" name="temes" value="cq">
+        <label for="cq">Computació quàntica</label>
+      </div>
+      <div>
+        <input type="checkbox" id="sc" name="temes" value="sc">
+        <label for="sc">Supercomputadors</label>
+      </div>
+      <div>
+        <input type="checkbox" id="ra" name="temes" value="ra">
+        <label for="ra">Recerca en algorísmia</label>
+      </div>
+    </div>
+
+    <!-- Se permite a los usuarios proporcionar información adicional si lo desean -->
+
+    <div class="input-group">
+      <p><strong>Hi ha algun tema més t'interessi? Explica'ns-ho!</strong></p>
+      <textarea id="altres" name="altres" rows="5" cols="40" placeholder="Explica'ns què més t'interessa"></textarea>
+    </div>
+
+    <!-- Enlace para enviar el formulario a una página de destino -->
+
+    <a href="formulari_enviat.html" class="btn-subscribe">Formulari</a>
+
+  </form>
+
+</body>
+
+</html>
